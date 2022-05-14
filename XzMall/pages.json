@@ -1,0 +1,100 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+        // 导航样式：自定义 不使用默认导航条
+        "navigationStyle":"custom",
+        // 启动下拉刷新
+        "enablePullDownRefresh":true
+			}
+		},
+    {
+      "path":"pages/product-search/product-search",
+      "style":{
+        "navigationStyle":"custom",
+        "enablePullDownRefresh":false
+      }
+    }
+    ,
+    {
+      "path" : "pages/brands/brands",
+      "style" :{
+        "navigationBarTitleText": "品牌馆",
+        "enablePullDownRefresh": true
+      }
+    }
+    ,{
+      "path" : "pages/product-category/product-category",
+      "style" :                                                                                    
+      {
+        "navigationBarTitleText": "商品分类",
+        "enablePullDownRefresh": false
+      }
+      
+    }
+        ,{
+            "path" : "pages/product-list/product-list",
+            "style" :                                                                                    
+            {
+              // 页面标题应该是动态改变，此处是默认值
+                "navigationBarTitleText": "商品列表",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/product-details/product-details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/user-center/user-center",
+            "style" :                                                                                    
+            {
+              // 标题也是动态的，此处仅给默认值
+                "navigationBarTitleText": "用户中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "学子商城",
+		"navigationBarBackgroundColor": "#0aa1ed",
+		"backgroundColor": "#F8F8F8"
+	},
+  "tabBar":{
+    "color": "#888",
+    "selectedColor": "#0aa1ed",
+    // "borderStyle": "black",
+    // "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home_active.png",
+        "text": "首页"
+    },{
+        "pagePath": "pages/brands/brands",
+        "iconPath": "static/img/brand.png",
+        "selectedIconPath": "static/img/brand_active.png",
+        "text": "品牌馆"
+    },{
+        "pagePath": "pages/product-category/product-category",
+        "iconPath": "static/img/category.png",
+        "selectedIconPath": "static/img/category_active.png",
+        "text": "分类"
+    },{
+        "pagePath": "pages/user-center/user-center",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user_active.png",
+        "text": "用户中心"
+    }]
+  }
+}
